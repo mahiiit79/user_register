@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="fa-ir" dir="rtl">
+   <head>
+      <meta charset="utf-8">
+      <title>{% block title %}{% endblock %}</title>
+      <link rel="stylesheet" href="/static/style.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="/static/assets/css/animated.css">
+    <link rel="stylesheet" href="/static/assets/css/owl.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+   </head>
+   <body>
+   
+   
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+           
+          
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="{% url 'home_page' %}" class="active">خانه</a></li>
+             
+                <li class="scroll-to-section"><a href="">ToDo</a></li>
+               
+              <li><div class="gradient-button"><a id="modal_trigger" href="{% url 'register' %}"><i class="fa fa-sign-in-alt"></i>همین حالا ثبت نام کنید.</a></div></li> 
+            </ul>        
+          
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+   {% block content %}{% endblock %}
+   
+   
+     <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/js/owl-carousel.js"></script>
+  <script src="/static/assets/js/animation.js"></script>
+  <script src="/static/assets/js/imagesloaded.js"></script>
+  <script src="/static/assets/js/popup.js"></script>
+  <script src="/static/assets/js/custom.js"></script>
+   </body>
+</html>
